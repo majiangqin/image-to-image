@@ -1,4 +1,7 @@
 """make variations of input image"""
+import sys
+# Append the directory containing the 'ldm' module to sys.path
+sys.path.append('/kaggle/working/stable-diffusion')
 
 import argparse, os, sys, glob
 import PIL
