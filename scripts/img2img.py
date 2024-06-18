@@ -1,7 +1,8 @@
 """make variations of input image"""
 import sys
 # Append the directory containing the 'ldm' module to sys.path
-sys.path.append('/kaggle/working/image-to-image')
+# sys.path.append('/kaggle/working/image-to-image')
+sys.path.append('/root/.local/lib/python3.10/site-packages')
 
 import argparse, os, sys, glob
 import PIL
