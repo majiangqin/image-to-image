@@ -173,13 +173,13 @@ def main():
     parser.add_argument(
         "--config",
         type=str,
-        default="configs/stable-diffusion/v1-inference.yaml",
+        default="/kaggle/input/img2img/v1-inference.yaml",
         help="path to config which constructs model",
     )
     parser.add_argument(
         "--ckpt",
         type=str,
-        default="models/ldm/stable-diffusion-v1/model.ckpt",
+        default="/kaggle/input/img2img/sd-v1-4.ckpt",
         help="path to checkpoint of model",
     )
     parser.add_argument(
