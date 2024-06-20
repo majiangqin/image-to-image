@@ -1,8 +1,11 @@
-"""make variations of input image"""
-import sys
+
 # Append the directory containing the 'ldm' module to sys.path
-sys.path.append('/kaggle/working/image-to-image')
-sys.path.append('/root/.local/lib/python3.10/site-packages')
+# sys.path.append('/kaggle/working/image-to-image')
+# sys.path.append('/root/.local/lib/python3.10/site-packages')
+
+
+
+"""make variations of input image"""
 
 import argparse, os, sys, glob
 import PIL
@@ -174,13 +177,13 @@ def main():
     parser.add_argument(
         "--config",
         type=str,
-        default="/kaggle/input/img2img/v1-inference.yaml",
+        default="configs/stable-diffusion/v1-inference.yaml",
         help="path to config which constructs model",
     )
     parser.add_argument(
         "--ckpt",
         type=str,
-        default="/kaggle/input/img2img/sd-v1-4.ckpt",
+        default="models/ldm/stable-diffusion-v1/model.ckpt",
         help="path to checkpoint of model",
     )
     parser.add_argument(
